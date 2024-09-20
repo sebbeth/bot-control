@@ -15,7 +15,7 @@ const useDeviceOrientation = () => {
     };
   }, []);
 
-  return deviceOrientation.toFixed(2);
+  return deviceOrientation;
 };
 
 export default useDeviceOrientation;

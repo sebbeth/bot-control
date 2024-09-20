@@ -1,9 +1,10 @@
-import GyroControl from "./components/GyroControl";
+import ManualControl from "./components/ManualControl";
 
 const App = () => {
   return (
     <div>
-      Bot Control <GyroControl />
+      <span className="text-3xl font-bold underline">Bot Control</span>
+      <ManualControl />
     </div>
   );
 };
