@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ControlsState from "../models/controlsState";
+import ControlsState from "../models/ControlsState";
 
 const GyroControl = (props: { ws: WebSocket }) => {
   const { ws } = props;

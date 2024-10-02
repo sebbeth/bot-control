@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/gyrocontrol.tsx","./src/hooks/usedeviceorientation.ts"],"version":"5.6.2"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/gyrocontrol.tsx","./src/components/manualcontrol.tsx","./src/components/settingsform.tsx","./src/helpers/websocket.ts","./src/hooks/usedeviceorientation.ts","./src/models/controlsstate.ts"],"version":"5.6.2"}
