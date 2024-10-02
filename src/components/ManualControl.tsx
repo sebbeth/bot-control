@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getSocketConnection } from "../helpers/websocket";
 import GyroControl from "./GyroControl";
 import SettingsForm from "./SettingsForm";
@@ -7,6 +7,15 @@ const ManualControl = () => {
   //   const [robotIp, setRobotIp] = React.useState<string>("");
 
   const [ws, setWs] = useState<WebSocket | null>(null);
+
+  useEffect(() => {
+    if (ws) {
+      ws.onclose = () => {
+        console.info("Connection closed");
+        setWs(null);
+      };
+    }
+  }, [ws]);
 
   function connect() {
     const robotIp = window.localStorage.getItem("robotIp");

@@ -12,13 +12,13 @@ const GyroControl = (props: { ws: WebSocket }) => {
       if (event.key === "ArrowLeft") {
         setControls((prevControls) => ({
           ...prevControls,
-          s: prevControls.s + 1,
+          s: prevControls.s + 5,
         }));
       }
       if (event.key === "ArrowRight") {
         setControls((prevControls) => ({
           ...prevControls,
-          s: prevControls.s - 1,
+          s: prevControls.s - 5,
         }));
       }
       if (event.key === " ") {
@@ -30,13 +30,13 @@ const GyroControl = (props: { ws: WebSocket }) => {
       if (event.key === "ArrowUp") {
         setControls((prevControls) => ({
           ...prevControls,
-          m: prevControls.m + 1,
+          m: prevControls.m + 3,
         }));
       }
       if (event.key === "ArrowDown") {
         setControls((prevControls) => ({
           ...prevControls,
-          m: prevControls.m - 1,
+          m: prevControls.m - 3,
         }));
       }
     };
